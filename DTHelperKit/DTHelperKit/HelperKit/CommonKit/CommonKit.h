@@ -49,6 +49,14 @@
 
 #pragma mark - Generate Color
 
+//设置圆角
+#define ViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]] // view圆角
+
 // color
 ///< format：0xFFFFFF
 #define k16RGBColor(rgbValue) \

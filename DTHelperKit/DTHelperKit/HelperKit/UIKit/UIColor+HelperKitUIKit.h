@@ -57,5 +57,7 @@
 + (UIColor *)fromShortHexValue:(NSUInteger)hex alpha:(CGFloat)alpha;
 
 + (UIColor *)colorHexString:(NSString *)hex;
+//随机颜色
++ (UIColor *)randomColor;
 
 @end

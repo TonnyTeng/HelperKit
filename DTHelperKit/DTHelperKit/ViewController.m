@@ -22,7 +22,8 @@
     
     DTTimeLineView *timeLineView = [[DTTimeLineView alloc] initWithFrame:CGRectMake(30, 50, kScreenWidth - 60, kScreenHeight - 100)];
     [self.view addSubview:timeLineView];
-    
+    //设置圆角
+    ViewBorderRadius(timeLineView, 5, 1, [UIColor redColor]);
     
     NSMutableArray *array = [[NSMutableArray alloc] init];
     for (NSInteger i = 0; i < 100; i ++) {

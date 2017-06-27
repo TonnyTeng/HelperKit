@@ -48,9 +48,11 @@ static NSString * const BFUniqueIdentifierDefaultsKey = @"BFUniqueIdentifier";
     if ([platform isEqualToString:@"iPhone7,2"])    return @"iPhone 6";
     if ([platform isEqualToString:@"iPhone8,1"])    return @"iPhone 6s";
     if ([platform isEqualToString:@"iPhone8,2"])    return @"iPhone 6s Plus";
-    if ([platform isEqualToString:@"iPhone9,1"])    return @"iPhone 7";
-    if ([platform isEqualToString:@"iPhone9,2"])    return @"iPhone 7 Plus";
-    
+    // 日行两款手机型号均为日本独占，可能使用索尼FeliCa支付方案而不是苹果支付
+    if ([platform isEqualToString:@"iPhone9,1"])    return @"国行、日版、港行iPhone 7";
+    if ([platform isEqualToString:@"iPhone9,2"])    return @"港行、国行iPhone 7 Plus";
+    if ([platform isEqualToString:@"iPhone9,3"])    return @"美版、台版iPhone 7";
+    if ([platform isEqualToString:@"iPhone9,4"])    return @"美版、台版iPhone 7 Plus";
     // iPod
     if ([platform isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
     if ([platform isEqualToString:@"iPod2,1"])      return @"iPod Touch 2G";
